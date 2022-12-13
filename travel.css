@@ -1,0 +1,120 @@
+* {
+    font-family: 'NanumSuJubEunDaeHagSaeng';
+}
+
+body {
+    background-image: url('배경.png');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.progress-bar {
+    height: 24;
+    width: 360px;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+
+
+.logo {
+    border-radius: 20%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin: 50px;
+}
+
+
+article {
+    display: flex;
+    /* 가로 정렬 */
+    flex-direction: column;
+    /* 세로 정렬 */
+}
+
+
+.question {
+    display: none;
+}
+
+.picto {
+    display: none;
+}
+
+.result {
+    display: none;
+}
+
+#img {
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.kakao_ad {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.share {
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.main4 {
+    display: none;
+}
+
+.main4>img {
+    position: absolute;
+    width: 50%;
+    height: 95%;
+    top: 0%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+
+.loader {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: flex;
+    background: white;
+    padding: 150px;
+    box-shadow: 0px 40px 60px -20px rgba(0, 0, 0, 0.2);
+}
+
+.loader span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.loader span:nth-child(2) {
+    background: #f07e6e;
+}
+
+.loader span:nth-child(3) {
+    background: #84cdfa;
+}
+
+.loader span:nth-child(4) {
+    background: #5ad1cd;
+}
+
+.loader span:not(:last-child) {
+    animation: animate 1.5s linear infinite;
+}
